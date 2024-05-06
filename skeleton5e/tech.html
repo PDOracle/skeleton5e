@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skeleton5e</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <h1 id="main-header">Alright, let's get to work...</h1>
+            <p id="descriptor" class="italicize">First off, a name...</p>
+            <div id="choose-name">
+                <div>
+                    <input type="text" id="char-name" placeholder="Character, not actual" required maxlength="20">
+                </div>
+                <p class="anim-pulse">Press Enter to submit...</p>
+            </div>
+            <div id="choose-type" style="display: none; justify-content: center;">
+                <div class="card" id="choice-phys">
+                    <h3>Slice it, bash it, shoot it.</h3>
+                </div>
+                <div class="card" id="choice-magic">
+                    <h3>Fireball it. No exceptions.</h3>
+                </div>
+                <div class="card" id="choice-supp">
+                    <h3>Make your friends stronger while you sit back and watch.</h3>
+                </div>
+            </div>
+            <div id="choose-phys" style="display: none; justify-content: center;">
+                <div class="card" id="phys-barbarian">
+                    <h3>Barbarian</h3>
+                    <br>
+                    <p>Your one-stop shop for juggernauts.</p>
+                </div>
+                <div class="card" id="phys-fighter">
+                    <h3>Fighter</h3>
+                    <br>
+                    <p>The Jack of All Trades when it comes to combat.</p>
+                </div>
+                <div class="card" id="phys-rogue">
+                    <h3>Rogue</h3>
+                    <br>
+                    <p>Evasive and crafty with a penchant for treasure.</p>
+                </div>
+            </div>
+            <div id="choose-magic" style="display: none; justify-content: center;">
+                <div class="card" id="magic-sorcerer">
+                    <h3>Sorcerer</h3>
+                    <br>
+                    <p>Innate mastery of magic creates versatility in spellcasting.</p>
+                </div>
+                <div class="card" id="magic-warlock">
+                    <h3>Warlock</h3>
+                    <br>
+                    <p>Trade Offer: Faster spell regeneration for less 
+                        <span class="tooltip">
+                            <span style="font-style: italic">spell slots.</span>
+                            <span class="tooltiptext">
+                                You know, the amount of spells you can cast before resting?
+                            </span>
+                        </span>
+                    </p>
+                </div>
+                <div class="card" id="magic-wizard">
+                    <h3>Wizard</h3>
+                    <br>
+                    <p>A versatile spell list makes one useful in EVERY party.</p>
+                </div>
+            </div>
+            <div id="choose-supp" style="display: none; justify-content: center;">
+                <div class="card" id="supp-bard">
+                    <h3>Bard</h3>
+                    <br>
+                    <p>They can roast nobles or seduce dragons, up to you, really.</p>
+                </div>
+                <div class="card" id="supp-cleric">
+                    <h3>Cleric</h3>
+                    <br>
+                    <p>Rely on the divine to aid your party and smite your enemies.</p>
+                </div>
+                <div class="card" id="supp-druid">
+                    <h3>Druid</h3>
+                    <br>
+                    <p>You get to transform into other creatures. <span class="italicize">*Mic drop*</span></p>
+                </div>
+            </div>
+            <div id="next-steps" style="display: none; justify-content: center;">
+                <br>
+                <p><span style="font-weight: bold;">1.</span> Rolling for stats(hit points, strength, constitution, etc.)</p>
+                <br>
+                <p><span style="font-weight: bold;">2.</span> Addressing class features(fighting style, spellcasting, etc.)</p>
+                <br>
+                <p><span style="font-weight: bold;">3.</span> Choosing a subclass(your class within a class)</p>
+                <br>
+                <p id="char-details" style="font-weight: bold"></p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="center">
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
